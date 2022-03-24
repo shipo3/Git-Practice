@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Kadai1 {
 
@@ -17,11 +18,15 @@ public class Kadai1 {
 			System.out.println ( (j+1) + "文字目は" + first[j] + "です。" );
 		}
 		//拡張for文で取り出す
-		String name[] = {"Hello","＆","World"};
+		String second[] = { "Hello", "＆", "World" };
 
-		for (String str: name){
+		for (String str : second) {
 		  System.out.println(str);
 		}
+		// for earch文で取り出す
+		String[] third = { "Hello", "$", "World" };
+		Arrays.stream(third).forEach(s -> System.out.println(s));
+
 		//文字列から取り出して1文字ずつ出力する	
 		String end = "bye";
 		for (int  k= 0; k < end.length(); k++) {
